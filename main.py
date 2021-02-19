@@ -7,6 +7,10 @@ import sys, getopt
 import boto3
 from botocore.config import Config
 import pprint
+
+#Ran into some last minute problems with get_item in view note that i could not figure out so code breaks 
+#after creating a note. I think delete note works but edit would have the same issue with get_item
+
 app = Flask("Champagne")
 Markdown(app)
 
